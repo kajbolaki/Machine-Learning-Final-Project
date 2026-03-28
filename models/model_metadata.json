@@ -1,0 +1,307 @@
+{
+  "generated_at_utc": "2026-03-28T16:02:57.152797+00:00",
+  "target_definition": "severe = injuries_fatal > 0 OR injuries_incapacitating > 0",
+  "numeric_features": [
+    "posted_speed_limit",
+    "crash_hour",
+    "crash_day_of_week",
+    "crash_month",
+    "num_units",
+    "vehicle_count",
+    "towed_vehicle_count",
+    "people_count",
+    "driver_count"
+  ],
+  "categorical_features": [
+    "traffic_control_device",
+    "intersection_related_i",
+    "hit_and_run_i",
+    "work_zone_i",
+    "weather_condition",
+    "lighting_condition",
+    "first_crash_type",
+    "trafficway_type",
+    "alignment",
+    "roadway_surface_cond",
+    "road_defect",
+    "prim_contributory_cause",
+    "sec_contributory_cause"
+  ],
+  "category_options": {
+    "traffic_control_device": [
+      "NO CONTROLS",
+      "TRAFFIC SIGNAL",
+      "STOP SIGN/FLASHER",
+      "UNKNOWN",
+      "OTHER",
+      "YIELD",
+      "OTHER REG. SIGN",
+      "PEDESTRIAN CROSSING SIGN",
+      "OTHER WARNING SIGN",
+      "RAILROAD CROSSING GATE",
+      "FLASHING CONTROL SIGNAL",
+      "DELINEATORS",
+      "SCHOOL ZONE",
+      "RR CROSSING SIGN",
+      "POLICE/FLAGMAN",
+      "OTHER RAILROAD CROSSING",
+      "NO PASSING",
+      "BICYCLE CROSSING SIGN"
+    ],
+    "intersection_related_i": [
+      "UNKNOWN",
+      "Y",
+      "N"
+    ],
+    "hit_and_run_i": [
+      "UNKNOWN",
+      "Y",
+      "N"
+    ],
+    "work_zone_i": [
+      "UNKNOWN",
+      "Y",
+      "N"
+    ],
+    "weather_condition": [
+      "CLEAR",
+      "RAIN",
+      "UNKNOWN",
+      "CLOUDY/OVERCAST",
+      "SNOW",
+      "FREEZING RAIN/DRIZZLE",
+      "OTHER",
+      "FOG/SMOKE/HAZE",
+      "SLEET/HAIL",
+      "BLOWING SNOW",
+      "SEVERE CROSS WIND GATE",
+      "BLOWING SAND, SOIL, DIRT"
+    ],
+    "lighting_condition": [
+      "DAYLIGHT",
+      "DARKNESS, LIGHTED ROAD",
+      "UNKNOWN",
+      "DARKNESS",
+      "DUSK",
+      "DAWN"
+    ],
+    "first_crash_type": [
+      "PARKED MOTOR VEHICLE",
+      "REAR END",
+      "SIDESWIPE SAME DIRECTION",
+      "TURNING",
+      "ANGLE",
+      "FIXED OBJECT",
+      "PEDESTRIAN",
+      "PEDALCYCLIST",
+      "REAR TO FRONT",
+      "SIDESWIPE OPPOSITE DIRECTION",
+      "OTHER OBJECT",
+      "REAR TO SIDE",
+      "HEAD ON",
+      "REAR TO REAR",
+      "OTHER NONCOLLISION",
+      "ANIMAL",
+      "OVERTURNED",
+      "TRAIN"
+    ],
+    "trafficway_type": [
+      "NOT DIVIDED",
+      "DIVIDED - W/MEDIAN (NOT RAISED)",
+      "ONE-WAY",
+      "FOUR WAY",
+      "PARKING LOT",
+      "DIVIDED - W/MEDIAN BARRIER",
+      "OTHER",
+      "T-INTERSECTION",
+      "ALLEY",
+      "UNKNOWN",
+      "CENTER TURN LANE",
+      "UNKNOWN INTERSECTION TYPE",
+      "RAMP",
+      "DRIVEWAY",
+      "FIVE POINT, OR MORE",
+      "Y-INTERSECTION",
+      "TRAFFIC ROUTE",
+      "NOT REPORTED",
+      "ROUNDABOUT",
+      "L-INTERSECTION"
+    ],
+    "alignment": [
+      "STRAIGHT AND LEVEL",
+      "STRAIGHT ON GRADE",
+      "CURVE, LEVEL",
+      "STRAIGHT ON HILLCREST",
+      "CURVE ON GRADE",
+      "CURVE ON HILLCREST"
+    ],
+    "roadway_surface_cond": [
+      "DRY",
+      "WET",
+      "UNKNOWN",
+      "SNOW OR SLUSH",
+      "ICE",
+      "OTHER",
+      "SAND, MUD, DIRT"
+    ],
+    "road_defect": [
+      "NO DEFECTS",
+      "UNKNOWN",
+      "OTHER",
+      "WORN SURFACE",
+      "RUT, HOLES",
+      "SHOULDER DEFECT",
+      "DEBRIS ON ROADWAY"
+    ],
+    "prim_contributory_cause": [
+      "UNABLE TO DETERMINE",
+      "FAILING TO YIELD RIGHT-OF-WAY",
+      "FOLLOWING TOO CLOSELY",
+      "IMPROPER OVERTAKING/PASSING",
+      "NOT APPLICABLE",
+      "FAILING TO REDUCE SPEED TO AVOID CRASH",
+      "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+      "IMPROPER TURNING/NO SIGNAL",
+      "IMPROPER BACKING",
+      "IMPROPER LANE USAGE",
+      "DISREGARDING TRAFFIC SIGNALS",
+      "WEATHER",
+      "OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER",
+      "DISREGARDING STOP SIGN",
+      "DRIVING ON WRONG SIDE/WRONG WAY",
+      "DISTRACTION - FROM INSIDE VEHICLE",
+      "EQUIPMENT - VEHICLE CONDITION",
+      "PHYSICAL CONDITION OF DRIVER",
+      "VISION OBSCURED (SIGNS, TREE LIMBS, BUILDINGS, ETC.)",
+      "UNDER THE INFLUENCE OF ALCOHOL/DRUGS (USE WHEN ARREST IS EFFECTED)",
+      "DISTRACTION - FROM OUTSIDE VEHICLE",
+      "DISREGARDING OTHER TRAFFIC SIGNS",
+      "ROAD ENGINEERING/SURFACE/MARKING DEFECTS",
+      "EVASIVE ACTION DUE TO ANIMAL, OBJECT, NONMOTORIST",
+      "ROAD CONSTRUCTION/MAINTENANCE"
+    ],
+    "sec_contributory_cause": [
+      "NOT APPLICABLE",
+      "UNABLE TO DETERMINE",
+      "FAILING TO YIELD RIGHT-OF-WAY",
+      "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+      "FAILING TO REDUCE SPEED TO AVOID CRASH",
+      "FOLLOWING TOO CLOSELY",
+      "IMPROPER OVERTAKING/PASSING",
+      "IMPROPER LANE USAGE",
+      "IMPROPER TURNING/NO SIGNAL",
+      "WEATHER",
+      "IMPROPER BACKING",
+      "OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER",
+      "DISREGARDING TRAFFIC SIGNALS",
+      "PHYSICAL CONDITION OF DRIVER",
+      "VISION OBSCURED (SIGNS, TREE LIMBS, BUILDINGS, ETC.)",
+      "DISREGARDING STOP SIGN",
+      "DISTRACTION - FROM INSIDE VEHICLE",
+      "DRIVING ON WRONG SIDE/WRONG WAY",
+      "EQUIPMENT - VEHICLE CONDITION",
+      "UNDER THE INFLUENCE OF ALCOHOL/DRUGS (USE WHEN ARREST IS EFFECTED)",
+      "DISTRACTION - FROM OUTSIDE VEHICLE",
+      "DISREGARDING OTHER TRAFFIC SIGNS",
+      "ROAD CONSTRUCTION/MAINTENANCE",
+      "HAD BEEN DRINKING (USE WHEN ARREST IS NOT MADE)",
+      "DISREGARDING ROAD MARKINGS"
+    ]
+  },
+  "numeric_ranges": {
+    "posted_speed_limit": {
+      "min": 10.0,
+      "max": 40.0,
+      "default": 30.0
+    },
+    "crash_hour": {
+      "min": 0.0,
+      "max": 23.0,
+      "default": 14.0
+    },
+    "crash_day_of_week": {
+      "min": 1.0,
+      "max": 7.0,
+      "default": 4.0
+    },
+    "crash_month": {
+      "min": 1.0,
+      "max": 12.0,
+      "default": 6.0
+    },
+    "num_units": {
+      "min": 1.0,
+      "max": 4.0,
+      "default": 2.0
+    },
+    "vehicle_count": {
+      "min": 1.0,
+      "max": 4.0,
+      "default": 2.0
+    },
+    "towed_vehicle_count": {
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0
+    },
+    "people_count": {
+      "min": 1.0,
+      "max": 6.0,
+      "default": 2.0
+    },
+    "driver_count": {
+      "min": 1.0,
+      "max": 3.0,
+      "default": 2.0
+    }
+  },
+  "selected_model": {
+    "model_name": "xgboost",
+    "hyperparameters": {
+      "learning_rate": 0.08,
+      "max_depth": 6,
+      "n_estimators": 220
+    },
+    "threshold": 0.7000000000000002,
+    "validation_metrics": {
+      "roc_auc": 0.8810709893237516,
+      "pr_auc": 0.12810186609856905,
+      "f1": 0.15393028024606972,
+      "f2": 0.2827724761426419,
+      "precision_severe": 0.08749028749028749,
+      "recall_severe": 0.6397727272727273,
+      "confusion_matrix": [
+        [
+          50600,
+          5872
+        ],
+        [
+          317,
+          563
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "roc_auc": 0.8885233355998666,
+    "pr_auc": 0.1211695063627586,
+    "f1": 0.15366022099447513,
+    "f2": 0.27791656257806646,
+    "precision_severe": 0.08804907004352988,
+    "recall_severe": 0.6029810298102981,
+    "confusion_matrix": [
+      [
+        52006,
+        4609
+      ],
+      [
+        293,
+        445
+      ]
+    ]
+  },
+  "risk_bands": {
+    "low_max": 0.2,
+    "medium_max": 0.5
+  }
+}

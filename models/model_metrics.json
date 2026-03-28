@@ -1,0 +1,50 @@
+{
+  "validation_selection": {
+    "model_name": "xgboost",
+    "hyperparameters": {
+      "learning_rate": 0.08,
+      "max_depth": 6,
+      "n_estimators": 220
+    },
+    "threshold": 0.7000000000000002,
+    "validation_metrics": {
+      "roc_auc": 0.8810709893237516,
+      "pr_auc": 0.12810186609856905,
+      "f1": 0.15393028024606972,
+      "f2": 0.2827724761426419,
+      "precision_severe": 0.08749028749028749,
+      "recall_severe": 0.6397727272727273,
+      "confusion_matrix": [
+        [
+          50600,
+          5872
+        ],
+        [
+          317,
+          563
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "roc_auc": 0.8885233355998666,
+    "pr_auc": 0.1211695063627586,
+    "f1": 0.15366022099447513,
+    "f2": 0.27791656257806646,
+    "precision_severe": 0.08804907004352988,
+    "recall_severe": 0.6029810298102981,
+    "confusion_matrix": [
+      [
+        52006,
+        4609
+      ],
+      [
+        293,
+        445
+      ]
+    ]
+  },
+  "train_rows": 458816,
+  "validation_rows": 57352,
+  "test_rows": 57353
+}

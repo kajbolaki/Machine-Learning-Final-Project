@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: chicago-crash-severity-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/streamlit_app.py --server.address 0.0.0.0 --server.port $PORT
