@@ -67,6 +67,3 @@ SOCRATA_APP_TOKEN=<optional_but_recommended>
 ```bash
 streamlit run src/streamlit_app.py --server.address 0.0.0.0 --server.port $PORT
 ```
-
-## Presentation Support
-Use `docs/presentation_outline.md` for the 5-minute final presentation structure.
